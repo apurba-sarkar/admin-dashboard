@@ -1,0 +1,23 @@
+nav{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    width: 9rem;
+    font-size: 6rem;
+    height: 100vh;
+    
+}
+nav a{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+
+
+
+}
+
+nav a:hover{
+    background-color: #61667f ;
+}
