@@ -16,12 +16,7 @@ const queryClient = new QueryClient({
   },
 });
 
-const handleButtonClick = () => {
-  const shouldClose = window.confirm('Are you sure you want to close this tab?');
-  if (shouldClose) {
-    window.close();
-  }
-};
+
 
 function App() {
   return (
