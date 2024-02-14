@@ -40,10 +40,22 @@ const CustomerAllData = () => {
   console.log(currencyValue);
 
   return (
-    <div>
-      <div>Total Puchased by All Cutomer</div>
-      <div>{currencyValue}</div>
-    </div>
+    
+    
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "column",
+        }}
+      >
+        <div>Total Puchased by All Customer</div>
+        <div style={{ fontSize: "4rem", marginTop: "1rem" }}>
+          {currencyValue}
+        </div>
+      </div>
+
   );
 };
 

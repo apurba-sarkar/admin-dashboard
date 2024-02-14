@@ -15,15 +15,15 @@ const Menu = () => {
     }
   };
   return (
-    <div style={{ backgroundColor: "#353A50" }}>
+    <div style={{ backgroundColor: "white" }}>
       <div>
         <nav>
-          <NavLink to="/"> <HomeRoundedIcon  sx={{ fontSize: 40 }}/></NavLink>
-          <NavLink to="/sales"> <MonetizationOnRoundedIcon sx={{ fontSize: 40 }}/> </NavLink>
-          <NavLink to="/products"><BadgeRoundedIcon sx={{ fontSize: 40 }}/></NavLink>
-          <NavLink to="/Customers"><PeopleOutlineRoundedIcon sx={{ fontSize: 40 }}/></NavLink>
+          <NavLink to="/"> <HomeRoundedIcon  sx={{ fontSize: 40 ,color:"transparent",stroke:"grey" }}/></NavLink>
+          <NavLink to="/sales"> <MonetizationOnRoundedIcon sx={{ fontSize: 40 ,color:"transparent",stroke:"grey" }}/> </NavLink>
+          <NavLink to="/products"><BadgeRoundedIcon sx={{ fontSize: 40, color:"transparent",stroke:"grey" }}/></NavLink>
+          <NavLink to="/Customers"><PeopleOutlineRoundedIcon sx={{ fontSize: 40,color:"transparent",stroke:"grey"  }}/></NavLink>
         </nav>
-        <button onClick={handleButtonClick}>< LockResetRoundedIcon sx={{ fontSize: 40 }}/></button>
+        <button onClick={handleButtonClick}>< LockResetRoundedIcon sx={{ fontSize: 40 ,color:"transparent",stroke:"grey" }}/></button>
       </div>
     </div>
   );

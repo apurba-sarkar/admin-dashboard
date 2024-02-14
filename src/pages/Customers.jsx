@@ -9,39 +9,61 @@ const Customers = () => {
         display: "flex",
         flexDirection: "column",
         width: "100%",
-       
+        marginLeft: "2rem",
       }}
     >
-      <div style={{height:"10rem"}}>Customer Report</div>
+      <div
+        style={{
+          height: "10rem",
+          display: "flex",
+          alignItems: "center",
+          justifyItems: "center",
+        }}
+      >
+        <h1 style={{ fontSize: "4rem" }}> CUSTOMER TRAFFIC REPORT</h1>
+      </div>
       <div
         style={{
           display: "grid",
           gridTemplateColumns: "auto auto auto",
           width: "100%",
-           height: "auto",
-          backgroundColor: "green",
+          // height: "100vh",
+          // backgroundColor: "green",
+          gap: "2rem",
+          fontSize: "2rem",
         }}
       >
         <div
           style={{
-            backgroundColor: "red",
+            // backgroundColor: "red",
             display: "grid",
             gridTemplateColumns: "repeat(1,1fr)",
           }}
         >
           <div
             style={{
-              backgroundColor: "green",
+              // backgroundColor: "green",
               padding: "2rem",
-              border: "black 2px solid",
+              // border: "black 2px solid",
+              // height: "20rem",
+              marginBottom: "5rem",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              backgroundColor:"#3FDAD8",
+              fontWeight:"bold",
+              color:"white",
+              borderRadius:".5rem"
+
             }}
           >
-            -------
             <CustomerAllData />
-           
           </div>
-          <div style={{height:"20rem"}}> <TopCustomer/></div>
-          <div>city with most selling</div>
+          <div style={{backgroundColor:"#37C9F1",padding:"3rem",}} >
+            {" "}
+            <TopCustomer />
+          </div>
+       
         </div>
         <div style={{ width: "100rem" }}>map</div>
         <div
