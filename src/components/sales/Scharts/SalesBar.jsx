@@ -1,26 +1,26 @@
 /* eslint-disable react/prop-types */
 import { AgChartsReact } from "ag-charts-react";
 
-const Productrange = ({ error, allProducts }) => {
-  console.log(allProducts);
+const SalesBar = ({ allSales}) => {
+  console.log(allSales);
 
   const option = {
-    data: allProducts,
+    data: allSales,
     series: [
       {
         type: "bar",
-        direction: "horizontal",
-        xKey: "Category",
-        yKey: "UnitsStock",
+    
+        xKey: "Salesperson",
+        yKey: "Sales",
         yName: "Total UnitsStock",
       },
-      {
-        type: "bar",
-        direction: "horizontal",
-        xKey: "Category",
-        yKey: "UnitsOrder",
-        yName: "Total UnitsOrder",
-      },
+    //   {
+    //     type: "bar",
+    //     direction: "horizontal",
+    //     xKey: "Category",
+    //     yKey: "UnitsOrder",
+    //     yName: "Total UnitsOrder",
+    //   },
     ],
     height: 550,overlays: {
         noData: {
@@ -41,4 +41,4 @@ const Productrange = ({ error, allProducts }) => {
   );
 };
 
-export default Productrange;
+export default SalesBar;
