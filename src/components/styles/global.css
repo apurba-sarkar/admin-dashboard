@@ -14,3 +14,8 @@
     /* padding: 2rem 0 ; */
 
 }
+
+.grth{
+    display:"flex";
+    justify-content: end;
+}

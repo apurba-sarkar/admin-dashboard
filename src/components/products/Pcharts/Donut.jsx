@@ -42,7 +42,7 @@ const Donut = ({ error, allProducts }) => {
 
   return (
     <div  style={{ fontSize: "3rem", fontWeight: "bold", marginLeft: "1.5rem" }}>
-        <div> Total UnitsSales of Each Saler</div>
+        <div> Total UnitsSales of Each Seller</div>
         <AgChartsReact options={option}/></div>
   )
 }
