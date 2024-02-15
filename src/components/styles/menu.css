@@ -2,22 +2,32 @@ nav{
     /* background-color: red; */
     display: flex;
     flex-direction: column;
-    width: 9rem;
+    width: 20rem;
     font-size: 6rem;
     height: 100vh;
     
 }
 nav a{
-    color: white;
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 4rem;
+    padding: 1rem 1rem;
+    margin: 1.5rem 0 ;
+    text-decoration: none;
+    border-radius: 1rem;
+    justify-content: start;
+
 
 
 
 }
 
-nav a:hover{
-    background-color: #39B5FF ;
+/* nav a:active{
+     background-color: #39B5FF ;
+    stroke: white; 
+} */
+
+.active{
+    background-color: #39B5FF;
 }
