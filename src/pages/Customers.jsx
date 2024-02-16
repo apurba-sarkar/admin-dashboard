@@ -1,84 +1,108 @@
-import Bar from "../components/Bar";
-import CustomerAllData from "../components/customers/CustomerAllData";
-import TopCustomer from "../components/customers/TopCustomer";
+import "../components/styles/global.css";
+import { useEffect, useState } from "react";
+// import StotalSales from "../components/sales/StotalSales";
+// import STotalUnitSales from "../components/sales/STotalUnitSales";
+// import SUniqueSalesPerson from "../components/sales/SUniqueSalesPerson";
+// import SUniqueProducts from "../components/sales/SUniqueProducts";
+// import StackedRadical from "../components/sales/Scharts/StackedRadical";
+// import SalesBar from "../components/sales/Scharts/SalesBar";
+// import SalesPersonBar from "../components/sales/Scharts/SalesPersonBar";
+// import RadicalColumn from "../components/sales/Scharts/RadicalColumn";
+// import RangedBar from "../components/sales/Scharts/RangedBar";
+// import Histogram from "../components/sales/Scharts/Histogram";
+// import CTotalPurchases from "../components/customers/CTotalPurchases";
+import { CustomerAllData } from "../services/api-customers";
 
-const Customers = () => {
+import CUniqueCustomer from "../components/customers/CUniqueCustomer";
+import CTotalPurchases from "../components/customers/CTotalPurchases";
+import CUniqueCity from "../components/customers/CUniqueCity";
+import CUniqueCountry from "../components/customers/CUniqueCountry";
+import Heatmap from "../components/customers/Ccharts/Heatmap";
+const Sales = () => {
+  const [allCustomers, setAllCustomers] = useState([]);
+  const [error, setError] = useState(null);
+  const processData = async () => {
+    try {
+      const res = await CustomerAllData();
+      setAllCustomers(res);
+    } catch (err) {
+      console.log(err);
+      setError(err);
+    }
+  };
+  console.log(allCustomers);
+  useEffect(() => {
+    processData();
+  }, []);
+
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        width: "100%",
-        marginLeft: "2rem",
-      }}
-    >
-      <div
-        style={{
-          height: "10rem",
-          display: "flex",
-          alignItems: "center",
-          justifyItems: "center",
-        }}
-      >
-        <h1 style={{ fontSize: "4rem" }}> CUSTOMER TRAFFIC REPORT</h1>
-      </div>
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "auto auto auto",
-          width: "100%",
-          // height: "100vh",
-          // backgroundColor: "green",
-          gap: "2rem",
-          fontSize: "2rem",
-        }}
-      >
+    <div style={{ marginLeft: "5rem" }}>
+      <div className="header">Product Traffic Status</div>
+      <div>
         <div
           style={{
-            // backgroundColor: "red",
             display: "grid",
-            gridTemplateColumns: "repeat(1,1fr)",
+            gridTemplateColumns: "repeat(4,35rem)",
+
+            columnGap: "3rem",
+            marginTop: "1rem",
           }}
         >
           <div
             style={{
-              // backgroundColor: "green",
+              backgroundColor: "#E3FFEC",
               padding: "2rem",
-              // border: "black 2px solid",
-              // height: "20rem",
-              marginBottom: "5rem",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              backgroundColor:"#3FDAD8",
-              fontWeight:"bold",
-              color:"white",
-              borderRadius:".5rem"
-
+              borderRadius: ".8rem",
+              // height:"1rem"
             }}
           >
-            <CustomerAllData />
+            <CTotalPurchases allCustomers={allCustomers} />
           </div>
-          <div style={{backgroundColor:"#37C9F1",padding:"3rem",}} >
-            {" "}
-            <TopCustomer />
+          <div
+            style={{
+              backgroundColor: "#FBFDDF",
+              padding: "2rem",
+              borderRadius: ".8rem",
+            }}
+          >
+            <CUniqueCustomer allCustomers={allCustomers} />
           </div>
+          <div
+            style={{
+              backgroundColor: "#EEF8FF",
+              padding: "2rem",
+              borderRadius: ".8rem",
+            }}
+          >
+            <CUniqueCity allCustomers={allCustomers} />
+          </div>
+          <div
+            style={{
+              backgroundColor: "#FFEEEF",
+              padding: "2rem",
+              borderRadius: ".8rem",
+            }}
+          >
+            <CUniqueCountry allCustomers={allCustomers} />
+          </div>
+        </div>
+      </div>
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "auto",
+          marginTop: "4rem",
+          rowGap: "2rem",
+        }}
+      >
+        <div>
+         <Heatmap allCustomers={allCustomers}/>
+        </div>
+
        
-        </div>
-        <div style={{ width: "100rem" }}>map</div>
-        <div
-          style={{
-            backgroundColor: "red",
-            display: "grid",
-            gridTemplateColumns: "repeat(1,1fr)",
-          }}
-        >
-          <div style={{ backgroundColor: "yellow" }}>1</div>
-          <div>2</div>
-        </div>
       </div>
     </div>
   );
 };
 
-export default Customers;
+export default Sales;

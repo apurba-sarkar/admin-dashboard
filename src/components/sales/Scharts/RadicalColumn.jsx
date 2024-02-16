@@ -42,20 +42,8 @@ const RadicalColumn = ({ allSales }) => {
         angleKey: "name",
         radiusKey: "sales",
         radiusName: "sales",
-        // stacked:"true"
       },
-      //   {
-      //     type: "radial-column",
-      //     radiusKey: "quantity",
-      //     angleKey: " name",
-      //     radiusName: "name",
-      //   },
-      //   {
-      //     type: "radial-column",
-      //     radiusKey: "quantity",
-      //     angleKey: " name",
-      //     radiusName: "name",
-      //   },
+      
     ],
     // width:400,
     overlays: {
