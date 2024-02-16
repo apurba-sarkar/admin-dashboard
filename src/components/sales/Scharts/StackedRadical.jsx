@@ -41,8 +41,8 @@ const StackedRadical = ({ error, allSales }) => {
         stacked: true,
       },
     ],
-    height: 300,
-    width: 300,
+    // height: 300,
+    // width: 300,
     overlays: {
       noData: {
         renderer: () => "<h2> data is loading..</h2>",
@@ -51,8 +51,8 @@ const StackedRadical = ({ error, allSales }) => {
   };
 
   return (
-    <div style={{ fontSize: "2rem", fontWeight: "bold", marginLeft: "1.5rem",}}>
-      <div> Total UnitsSales of Each Seller</div>
+    <div style={{ fontSize: "2rem", fontWeight: "bold", marginLeft: "1.5rem"}}>
+      <div> Sales and Units per Catergory</div>
       <AgChartsReact options={option} />
     </div>
   );

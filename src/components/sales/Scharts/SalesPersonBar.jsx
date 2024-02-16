@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { AgChartsReact } from "ag-charts-react";
 
-const SalesBar = ({ allSales}) => {
+const SalesPersonBar= ({ allSales}) => {
   console.log(allSales);
 
   const option = {
@@ -9,13 +9,12 @@ const SalesBar = ({ allSales}) => {
     series: [
       {
         type: "bar",
-        // direction: 'horizontal',
         xKey: "Product",
-        yKey: "Sales",
+        yKey: "Units",
         yName: "Total Sales",
       }
     ],
-    // width:400,
+    // width: 600,
     overlays: {
         noData: {
           renderer: () => "<h2> data is loading..</h2>",
@@ -28,11 +27,11 @@ const SalesBar = ({ allSales}) => {
       <div
        style={{ fontSize: "2rem", fontWeight: "bold", marginLeft: "1.5rem"}}
       >
-       Sales per Products
+       Units per Products
       </div>
       <AgChartsReact options={option} />
     </div>
   );
 };
 
-export default SalesBar;
+export default SalesPersonBar;

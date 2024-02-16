@@ -50,9 +50,9 @@ const Menu = () => {
             <span>Customers</span>
           </NavLink>
         </nav>
-        <button onClick={handleButtonClick} style={style}>
+        {/* <button onClick={handleButtonClick} style={style}>
           <ExitToAppRoundedIcon sx={componentStyle} /> <span>Customers</span>
-        </button>
+        </button> */}
       </div>
     </div>
   );

@@ -7,6 +7,10 @@ import SUniqueSalesPerson from "../components/sales/SUniqueSalesPerson";
 import SUniqueProducts from "../components/sales/SUniqueProducts";
 import StackedRadical from "../components/sales/Scharts/StackedRadical";
 import SalesBar from "../components/sales/Scharts/SalesBar";
+import SalesPersonBar from "../components/sales/Scharts/SalesPersonBar";
+import RadicalColumn from "../components/sales/Scharts/RadicalColumn";
+import RangedBar from "../components/sales/Scharts/RangedBar";
+import Histogram from "../components/sales/Scharts/Histogram";
 
 const Sales = () => {
   const [allSales, setAllSales] = useState([]);
@@ -33,14 +37,9 @@ const Sales = () => {
           style={{
             display: "grid",
             gridTemplateColumns: "repeat(4,35rem)",
-            // backgroundColor: "red",
-            // width: "100vw",
+
             columnGap: "3rem",
             marginTop: "1rem",
-            // padding:" 1rem"
-            // marginLeft:"2rem"
-
-            // height:"25rem"
           }}
         >
           <div
@@ -86,15 +85,30 @@ const Sales = () => {
       <div
         style={{
           display: "grid",
-          gridTemplateColumns: "repeat(3,1fr)",
+          gridTemplateColumns: "40rem 60rem 60rem",
           marginTop: "4rem",
-          // backgroundColor: "green",
-          // width:"100vw",
+          rowGap:"2rem"
+          
         }}
       >
-        <div><StackedRadical allSales={allSales}/> </div>
-        <div><SalesBar allSales={allSales}/> </div>
-        <div><SalesBar allSales={allSales}/> </div>
+        <div>
+          <StackedRadical allSales={allSales} />{" "}
+        </div>
+        <div>
+          <SalesBar allSales={allSales} />{" "}
+        </div>
+        <div>
+          <SalesPersonBar allSales={allSales} />{" "}
+        </div>
+        <div>
+          <RadicalColumn allSales={allSales} />{" "}
+        </div>
+        <div>
+          <RangedBar allSales={allSales} />{" "}
+        </div>
+        <div>
+          <Histogram allSales={allSales} />{" "}
+        </div>
       </div>
     </div>
   );
