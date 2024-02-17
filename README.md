@@ -23,6 +23,7 @@ developer by  $${\color{blue}Apurba Sarkar}$$
 
 ## Screenshots: 
 ![Screenshot 2024-02-17 202846](https://github.com/apurba-sarkar/admin-dashboard/assets/127435292/54b284e5-b5ed-4004-88b0-9cdeffef1c17)
-![Screenshot 2024-02-17 203034](https://github.com/apurba-sarkar/admin-dashboard/assets/127435292/5338b12b-890e-4fec-b330-424f056f0e33)
 ![Screenshot 2024-02-17 202933](https://github.com/apurba-sarkar/admin-dashboard/assets/127435292/9a0f68ae-99b0-4d26-889e-4c1a5596b8c8)
 ![Screenshot 2024-02-17 202914](https://github.com/apurba-sarkar/admin-dashboard/assets/127435292/36c78f64-f36e-47b5-8fbb-4a434e356956)
+![Screenshot 2024-02-17 203034](https://github.com/apurba-sarkar/admin-dashboard/assets/127435292/5338b12b-890e-4fec-b330-424f056f0e33)
+
