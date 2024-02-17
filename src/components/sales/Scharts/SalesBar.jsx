@@ -5,6 +5,7 @@ const SalesBar = ({ allSales}) => {
   console.log(allSales);
 
   const option = {
+    theme:myTheme,
     data: allSales,
     series: [
       {
@@ -36,3 +37,10 @@ const SalesBar = ({ allSales}) => {
 };
 
 export default SalesBar;
+var myTheme = {
+  baseTheme: "ag-default",
+  palette: {
+    fills: ["#96E9C6", "#FFF67E", "#21B372", "#FDDE02", "#F76700", "#D30018"],
+    strokes: ["black"],
+  }
+}

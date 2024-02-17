@@ -5,6 +5,7 @@ const Productrange = ({ error, allProducts }) => {
   console.log(allProducts);
 
   const option = {
+    theme: myTheme,
     data: allProducts,
     series: [
       {
@@ -42,3 +43,10 @@ const Productrange = ({ error, allProducts }) => {
 };
 
 export default Productrange;
+var myTheme = {
+  baseTheme: "ag-default",
+  palette: {
+    fills: ["#4CB9E7", "#C1F2B0", "#21B372", "#FDDE02", "#F76700", "#D30018"],
+    strokes: ["black"],
+  }
+}

@@ -34,11 +34,11 @@ const Menu = () => {
     <div style={{ backgroundColor: "white" }}>
       <div>
         <nav style={{ fontSize: "2rem" }}>
-          <NavLink to="/" style={style}>
+          {/* <NavLink to="/" style={style}>
             {" "}
             <HomeRoundedIcon sx={componentStyle} />
             <span>Overview</span>
-          </NavLink>
+          </NavLink> */}
           <NavLink to="/sales" style={style}>
             <TrendingDownRoundedIcon sx={componentStyle} /> <span>Sales</span>
           </NavLink>

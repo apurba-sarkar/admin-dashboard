@@ -31,7 +31,7 @@ const Sales = () => {
 
   return (
     <div style={{ marginLeft: "5rem" }}>
-      <div className="header">Product Traffic Status</div>
+      <div className="header">Sales Traffic Status</div>
       <div>
         <div
           style={{

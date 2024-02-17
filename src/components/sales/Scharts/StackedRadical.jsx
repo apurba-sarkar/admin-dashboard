@@ -6,7 +6,7 @@ const StackedRadical = ({ error, allSales }) => {
 
   //   // Iterate over the products array and sum quantities for each product
   //   // eslint-disable-next-line react/prop-types
-  //   allSales.forEach((product) => {
+  //   allSaless.forEach((product) => {
   //     if (!quantityMap[product.Supplier]) {
   //       quantityMap[product.Supplier] = 0;
   //     }
@@ -24,6 +24,7 @@ const StackedRadical = ({ error, allSales }) => {
   // console.log(groupedProducts);
 
   const option = {
+    theme: myTheme,
     data: allSales,
     series: [
       {
@@ -59,3 +60,11 @@ const StackedRadical = ({ error, allSales }) => {
 };
 
 export default StackedRadical;
+
+var myTheme = {
+  baseTheme: "ag-default",
+  palette: {
+    fills: ["#9BCF53", "#FFF67E", "#21B372", "#FDDE02", "#F76700", "#D30018"],
+    strokes: ["black"],
+  }
+}

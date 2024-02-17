@@ -25,10 +25,10 @@ function App() {
         <ReactQueryDevtools initialIsOpen={true} />
         <Menu />
         <Routes>
-          <Route path="/" element={<Overview />} />
-          <Route path="/Sales" element={<Sales />} />
-          <Route path="/Products" element={<Products />} />
-          <Route path="/customers" element={<Customers />} />
+          <Route path="/" exact element={<Overview />} />
+          <Route path="/Sales" exact  element={<Sales />} />
+          <Route path="/Products" exact element={<Products />} />
+          <Route path="/customers" exact element={<Customers />} />
       
         </Routes>
       </QueryClientProvider>

@@ -5,6 +5,7 @@ const Histogram = ({ allSales }) => {
   console.log(allSales);
 
   const option = {
+    theme:myTheme,
     data: allSales,
     series: [
       {
@@ -47,3 +48,11 @@ const Histogram = ({ allSales }) => {
 };
 
 export default Histogram;
+
+var myTheme = {
+  baseTheme: "ag-default",
+  palette: {
+    fills: ["#FFCF96", "#FFF67E", "#21B372", "#FDDE02", "#F76700", "#D30018"],
+    strokes: ["white"],
+  }
+}

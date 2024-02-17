@@ -28,6 +28,7 @@ const RangedBar = ({ allSales }) => {
 //   console.log(summedProducts);
 
   const option = {
+    theme:myTheme,
     data: allSales,
     series: [
         {
@@ -65,3 +66,11 @@ const RangedBar = ({ allSales }) => {
 };
 
 export default RangedBar;
+
+var myTheme = {
+  baseTheme: "ag-default",
+  palette: {
+    fills: ["#FF8080", "#FFF67E", "#21B372", "#FDDE02", "#F76700", "#D30018"],
+    strokes: ["black"],
+  }
+}

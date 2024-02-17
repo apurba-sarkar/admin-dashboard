@@ -28,6 +28,7 @@ const RadicalColumn = ({ allSales }) => {
   console.log(summedProducts);
 
   const option = {
+    theme:myTheme,
     data: summedProducts,
     series: [
       {
@@ -66,3 +67,10 @@ const RadicalColumn = ({ allSales }) => {
 };
 
 export default RadicalColumn;
+var myTheme = {
+  baseTheme: "ag-default",
+  palette: {
+    fills: [ "#FFB996","#DC84F3", "#21B372", "#FDDE02", "#F76700", "#D30018"],
+    strokes: ["black"],
+  }
+}
