@@ -27,8 +27,5 @@ developer by  $${\color{blue}Apurba Sarkar}$$
 - Vanila CSS
 
 
-
-
-
-
 ## Screenshots: 
+![Screenshot 2024-02-17 202846](https://github.com/apurba-sarkar/admin-dashboard/assets/127435292/54b284e5-b5ed-4004-88b0-9cdeffef1c17)
