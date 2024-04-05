@@ -1,4 +1,4 @@
-# Title: Dashboard Application with Real-time Database Integration (App name: Admin Dashboard)
+# Title: Dashboard Application with Real-time Database Integration (App name: Dashboard Charts)
 
 Introduction:
 Our project aims to develop a dynamic dashboard application with real-time data visualization capabilities, leveraging modern technologies such as React Toolkit and Supabase. This dashboard provides users with a comprehensive view of their data through interactive charts, powered by live data fetched from the Supabase database. We prioritize user convenience by offering seamless integration, allowing users to monitor their data in real-time from any device with an internet connection. By utilizing a combination of Ag charts, we've crafted a robust solution that meets the demands of modern data visualization applications.
